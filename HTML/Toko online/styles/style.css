@@ -1,0 +1,329 @@
+/*universal style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: georgia;
+}
+
+/*style untuk bagian Header*/
+/*style Header untuk Mobile*/
+.logo img {
+    width: 150px;
+    /*display: block;*/
+    margin: auto;
+}
+
+.header {
+    margin: 1%;
+}
+
+.nav-left,
+.nav-right {
+    background-color: black;
+}
+
+.nav-left ul,
+.nav-right ul {
+    list-style: none;
+}
+
+.nav-left a,
+.nav-right a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    background-color: grey;
+}
+
+/*style Header yang berubah saat ditampilkan pada Desktop*/
+@media (min-width: 400px) {
+    .header {
+        width: 900px;
+        margin: auto;
+        display: flex;
+        margin-top: 1%;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+
+    .nav-left,
+    .nav-right {
+        background-color: white;
+    }
+
+    .nav-left ul,
+    .nav-right ul {
+        display: flex;
+    }
+
+    .nav-left a,
+    .nav-right a {
+        color: black;
+    }
+
+    .nav-left a:hover,
+    .nav-right a:hover {
+        color: white;
+    }
+}
+
+/*style bagian Main*/
+/*style Main untuk Mobile*/
+.main {
+    margin-top: 10px;
+}
+
+.main-left img {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+.main-right {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.main-right h2 {
+    margin-bottom: 10px;
+}
+
+/*style Main yang berubah saat ditampilkan pada Desktop*/
+@media (min-width: 400px) {
+    .main {
+        width: 900px;
+        margin: auto;
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-left img {
+        width: 450px;
+        display: block;
+        margin: auto;
+    }
+
+    .main-right {
+        margin: auto;
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+
+
+/*style untuk bagian Display dan Produk*/
+/*style Display dan Produk untuk Mobile*/
+.display {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.image img {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.produk-content {
+    text-align: center;
+    margin: 20px;
+}
+
+.deskripsi p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/*style Display dan Produk yang berubah saat ditampilkan pada Desktop*/
+@media (min-width: 400px) {
+    .produk {
+        width: 900px;
+        margin: auto;
+        display: flex;
+    }
+
+    .image {
+        height: 200px;
+    }
+
+    .image img {
+        width: 190px;
+        display: block;
+        margin: auto;
+    }
+}
+
+
+/*style untuk bagian Informasi*/
+/*style Informasi untuk Mobile*/
+.info {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-content {
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    width: 40px;
+    display: block;
+    margin-right: 10px;
+}
+
+.info-icon h2 {
+    font-size: 15px;
+}
+
+/*style Informasi yang berubah saat ditampilkan pada Desktop*/
+@media (min-width: 400px) {
+    .info {
+        width: 900px;
+        margin: auto;
+        justify-content: space-between;
+    }
+}
+
+
+/*style untuk bagian Medsos*/
+/*style Medsos untuk Mobile*/
+
+.medsos {
+    background-color: black;
+    color: white;
+}
+
+.medsos-teks {
+
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.medsos-form {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medsos-form form input {
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right: -4px;
+}
+
+.medsos-form form input {
+    padding: 10px;
+}
+
+.medsos-form form button {
+    height: 25px;
+    padding: 4px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-transform: uppercase;
+}
+
+.medsos-icon img {
+    width: 30px;
+    margin: 10px;
+}
+
+.medsos-icon {
+    display: flex;
+    justify-content: center;
+}
+
+/*style Medsos yang berubah saat ditampilkan pada Desktop*/
+@media (min-width: 400px) {
+    .medsos {
+        width: 900px;
+        margin: auto;
+        margin-top: 25px;
+    }
+}
+
+/*style untuk bagian Footer*/
+/*style Footer untuk Mobile*/
+footer {
+    margin-bottom: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.logo-bank img {
+    width: 70px;
+}
+
+.identitas {
+    flex: 1;
+    padding-bottom: 10px;
+}
+
+.identitas p {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+
+.sitemap,
+.sitemap li,
+.sitemap a {
+    flex: 1;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.identitas h2,
+.sitemap h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.payment {
+    flex: 1;
+}
+
+.bank h3 {
+    font-size: 12px;
+}
+
+.bank p {
+    font-size: 10px;
+}
+
+.bank {
+    padding-bottom: 15px;
+}
+
+/*style Footer yang berubah saat ditampilkan pada Desktop*/
+@media (min-width: 400px) {
+    footer {
+        width: 900px;
+        margin: auto;
+        padding-top: 15px;
+    }
+}
